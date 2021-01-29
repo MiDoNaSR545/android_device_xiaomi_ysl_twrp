@@ -99,5 +99,9 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_INCLUDE_LIBRESETPROP := true
 TW_NO_EXFAT_FUSE := true
 
+# DNM
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
+
 # For ci only
 TW_DEVICE_VERSION := 1

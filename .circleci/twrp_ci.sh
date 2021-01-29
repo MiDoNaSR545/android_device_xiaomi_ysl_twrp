@@ -96,7 +96,7 @@ repo sync -c --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune
 git clone "$DEVICE_TREE" -b "$DEVICE_BRANCH" device/"$VENDOR"/"$CODENAME"/
 
 # let's start building the image
-
+cd bootable/recovery && git fetch https://gerrit.twrp.me/android_bootable_recovery refs/changes/98/3298/2 && git cherry-pick FETCH_HEAD && cd ../..
 tg_post_msg "<b>TWRP CI Build Triggered for $DEVICE</b>" "$CHATID"
 build_twrp || error=true
 DATE=$(date +"%Y%m%d")

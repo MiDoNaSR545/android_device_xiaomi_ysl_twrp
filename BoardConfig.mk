@@ -105,3 +105,21 @@ TWRP_INCLUDE_LOGCAT := true
 
 # For ci only
 TW_DEVICE_VERSION := 1
+
+# SHRP flags
+SHRP_PATH := device/xiaomi/ysl
+SHRP_MAINTAINER := MiDoNaSR545
+SHRP_DEVICE_CODE := ysl
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /sdcard1
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_AB := false
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+SHRP_DARK := true
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
